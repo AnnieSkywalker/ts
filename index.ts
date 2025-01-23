@@ -63,3 +63,43 @@ let user: Person = {
 };
 
 user = 'test';
+
+class User1 {
+
+    public name: string;
+    protected age: number;
+    private nickName: string;
+    readonly pass: number;
+
+    constructor(name: string, age: number, nickName: string, pass: number) {
+        this.name = name;
+        this.age = age;
+        this.nickName = nickName;
+        this.pass = pass;
+    }
+
+}
+const yauhen1 = new User1('Yauhen', 31, 'wepDev', 123);
+
+class User2 {
+
+    constructor(
+        public name: string,
+        public age: number,
+        public nickName: string,
+        public pass: number,
+    ) {
+        this.name = name;
+        this.age = age;
+        this.nickName = nickName;
+        this.pass = pass;
+    }
+
+}
+
+const yauhen = new User2('Yauhen', 31, 'wepDev', 123);
+
+yauhen.name;
+yauhen.age;
+yauhen.nickName;
+yauhen.pass;
