@@ -52,3 +52,14 @@ const createSkills = (name: string, ...skills: Array<string>) => {
 
 
 createSkills('Jack', 'JS', 'ES6', 'React');
+
+
+type Person = {name: string, age: number, nickName?: string, getPass?: () => string};
+
+let user: Person = {
+    name: 'Andrey',
+    age: 30,
+    nickName: 'Annie',
+};
+
+user = 'test';
