@@ -43,3 +43,12 @@ let id: Name;
 id="42";
 id=10;
 
+const createPassword = (name: string = 'Max', age?: number | string) => `${name}${age}`;
+createPassword('Jack', '31');
+
+const createSkills = (name: string, ...skills: Array<string>) => {
+    `${name}, my skills are ${skills.join()}`;
+}
+
+
+createSkills('Jack', 'JS', 'ES6', 'React');
